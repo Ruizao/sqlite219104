@@ -1,23 +1,10 @@
 from flask import Flask, render_template
-import sqlite3
 
 app = Flask(__name__)
 
-ficheiro = sqlite3.connect('utilizadores.db')
-c = ficheiro.cursor()
-
-
-def criar_tabela():
-    c.execute('CREATE TABLE IF NOT EXISTS utilizador (utilizador text, passe text)')
-
-criar_tabela()
-
-def gravar_dados():
-    c.execute("INSERT INTO utilizador VALUES ('chouriças', 'cachorro')")
-    ficheiro.commit()
-
-gravar_dados()
-ficheiro.close()
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/login')
 def login():
@@ -26,3 +13,6 @@ def login():
 @app.route('/registro')
 def registro():
     return render_template('registro.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
