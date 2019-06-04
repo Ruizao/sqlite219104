@@ -3,63 +3,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-ul {
-  list-style-type: none;
-  margin: 15;
-  padding: 0;
-  overflow: hidden;
-  background-color: #56595b;
-}
-
-li {
-  float: left;
-}
-
 fieldset {
   width: 240px;
-  padding: 50px;
-  background-color: #444547;
+  padding: 75px;
+  background-color: #606268;
   border: 3xpx groove;
   border-color:#ad0303;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 15px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #ad0303;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #56595b;
-  min-width: 142px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 19px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.back-site{
-    background: cover;
 }
