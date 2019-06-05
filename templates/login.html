@@ -6,23 +6,20 @@
 
 <center>
     <font color="black">
-        <h1>Alterar a Palavra-Passe</h1>
+        <h1>Iniciar Sessão</h1>
         <form method="post">
             <fieldset>
                 <h2>Utilizador</h2>
                 <input type="text" name="usr" required>
                 <p><br></p>
-                <h2>Nova Palavra-Passe</h2>
+                <h2>Palavra-Passe</h2>
                 <input type="password" name="pwd" required>
-                <p><br></p>
-                <h2>Confirma a NovaPasse</h2>
-                <input type="password" name="cpwd" required>
                 <p><br></p>
                 <input type="submit" value="Criar">
             </fieldset>
         </form>
-    {% if erro %}
-<h2>{{ erro }}</h2>
-    {% endif %}
+        {% if erro %}
+        <h2>{{ erro }}</h2>
+        {% endif %}
     </font>
 </center>
