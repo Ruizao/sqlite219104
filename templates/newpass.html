@@ -2,6 +2,8 @@
 <link rel="stylesheet" type="text/css" href="/static/style.css">
 </html>
 
+{% extends 'layout.html' %}
+{% block conteudo %}
 <title>Criar Nova Conta</title>
 
 <center>
@@ -18,11 +20,12 @@
                 <h2>Confirma a NovaPasse</h2>
                 <input type="password" name="cpwd" required>
                 <p><br></p>
-                <input type="submit" value="Criar">
+                <input type="submit" value="Nova Password">
             </fieldset>
         </form>
-    {% if erro %}
-<h2>{{ erro }}</h2>
-    {% endif %}
+        {% if erro %}
+        <h2>{{ erro }}</h2>
+        {% endif %}
     </font>
 </center>
+{% endblock %}

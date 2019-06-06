@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="static/favicon.png">
+    <title>Overwatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+</head>
+
+{% block head %}
+{% endblock %}
+<center>
+    <ul>
+        <li><a class="active" href="/"><i class="fa fa-fw fa-home"></i> Hotel</a></li>
+        <li><a class="active" href="login"><i class="fas fa-lock"></i> Login</a></li>
+        <li><a class="active" href="registro"><i class="fas fa-user-tie"></i> Registro</a>
+        <li><a class="active" href="newpass"><i class="fas fa-users-cog"></i> Alterar Passe</a>
+        <li><a class="active" href="delete"><i class="fas fa-user-times"></i> Eliminar Conta</a>
+        </li>
+    </ul>
+</center>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% block conteudo %}
+{% endblock %}
+<style>
+    .footer {
+        width:100%;
+        background-color: #4f555e;
+    }
+    .footer-info {
+        display:flex;
+    }
+    .footer-content {
+        padding: 0px 10px 0px 0px;
+    }
+    .imgd2{
+        width:260px;
+        height:260px;
+    }
+    .footer-content-2 h2 {
+        text-align:left;
+    }
+    .footer-content {
+        width:1000px;
+}
+
+</style>
+<br>
+<footer class="footer">
+    <div class="footer-info">
+        <div class="footer-content">
+            <div class="footer-content-2">
+                <h2>Overwatch</h2>
+                <h4>Nome: Rui Azevedo, Dust 2</h4>
+                <h4>Morada: Rua do BombSite A</h4>
+                <h4>Telefone: 7355608</h4>
+                <h4>Código Postal: T-Side 11237-73556</h4>
+            </div>
+        </div>
+        <div class="footer-img">
+            <div class="footer-img-2">
+                <img class="imgd2" src="/static/dust2.jpg">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div style="z-index: 2;">
+    <center>
+        <h2>&copy 2019 Rui Azevedo</h2>
+    </center>
+</div>
