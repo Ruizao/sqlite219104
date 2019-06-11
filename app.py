@@ -50,7 +50,7 @@ def log(v1, v2):
     ficheiro.close()
     return valor
 
-def delete(v1):
+def eliminar(v1):
     ficheiro = herokudb()
     db = ficheiro.cursor()
     db.execute("DELETE FROM usr WHERE usr = %s", (v1,))
